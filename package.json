@@ -1,0 +1,35 @@
+{
+  "name": "POGOServer",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dadalha/my-pgp.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "babel-node": "babel-node --presets=env",
+    "start": "npm run babel-node -- ./src/index.js"
+  },
+  "engines": {
+    "node": ">= 10.x",
+    "npm": ">= 3.x"
+  },
+  "author": "Felix Maier",
+  "license": "GNU GPL v3",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "fs-extra": "^6.0.1",
+    "jwt-decode": "^2.2.0",
+    "mysql": "^2.15.0",
+    "node-pogo-protos-vnext": "^2.25.0",
+    "pokename": "^0.3.0",
+    "pokerare": "^0.1.1",
+    "request": "^2.87.0",
+    "s2-geometry": "^1.2.10"
+  },
+  "devDependencies": {}
+}
