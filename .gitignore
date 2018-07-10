@@ -2,5 +2,8 @@ node_modules/
 
 data/*
 !data/.gitkeep
+!data/android
+data/android/*
+!data/android/.gitkeep
 
 package-lock.json
