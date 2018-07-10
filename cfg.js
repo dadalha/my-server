@@ -41,7 +41,7 @@ export default {
 
   // MySQL credentials
   MYSQL_PORT: 3306,
-  MYSQL_HOST_IP: "127.0.0.1",
+  MYSQL_HOST_IP: "mariadb",
   MYSQL_DB_NAME: "pogosql",
   MYSQL_USERNAME: "root",
   MYSQL_PASSWORD: "",

@@ -29,20 +29,17 @@ export function setup() {
 
       shared.GAME_MASTER = new GameMaster(this);
 
-      // TODO(dadalha): Implement
-      // this.setupDatabaseConnection().then(() => {
-      //   if (CFG.PORT < 1) {
-      //     print("Invalid port!", 31);
-      //     return void 0;
-      //   }
-      //   this.socket = this.createHTTPServer();
-      //   setTimeout(this::this.cycle, 1);
-      //   let localIPv4 = this.getLocalIPv4();
-      //   print(`Server listening at ${localIPv4}:${CFG.PORT}`, 33);
-      //   resolve();
-      // });
-
-      resolve();
+      this.setupDatabaseConnection().then(() => {
+        if (CFG.PORT < 1) {
+          print("Invalid port!", 31);
+          return void 0;
+        }
+        this.socket = this.createHTTPServer();
+        setTimeout(this::this.cycle, 1);
+        let localIPv4 = this.getLocalIPv4();
+        print(`Server listening at ${localIPv4}:${CFG.PORT}`, 33);
+        resolve();
+      });
 
     }).catch((e) => {
       print("Error: " + e + " was not found!", 31);

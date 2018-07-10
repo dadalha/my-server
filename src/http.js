@@ -32,7 +32,7 @@ export function shutdown() {
     this.closeConnection(() => {
       print("Closed database connection!", 33);
       print("Server shutdown!", 31);
-      setTimeout(() => process.exit(1), 2e3);
+      setTimeout(() => process.exit(0), 2e3);
     });
   });
 }
